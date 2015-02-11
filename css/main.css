@@ -1,0 +1,532 @@
+html,body {
+	padding:0px !important;
+}
+
+#oneInp::-webkit-input-placeholder { padding-top:12px; }
+
+body p, h2, h3, h4, h5, a {
+	font-family: 'Roboto', "freight-sans-pro", sans-serif;
+}
+
+a:hover {
+	text-decoration: none
+}
+
+body p {
+	font-size:16pt;
+	font-weight:100;
+}
+
+body h1 {
+	font-family: 'Roboto', "museo-sans", sans-serif;
+	font-size:25pt;
+}
+
+.header_logo {
+	font-size:42px;
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+.header_logo a {
+	font-size:42px;
+	color:#e74040;
+	text-decoration: none;
+}
+
+.header {
+	padding: 20px 0px 20px 0px;
+}
+
+.header p {
+}
+
+.search {
+	padding: 16% 0% 20% 0%;
+	background-color: #2980b9;
+}
+
+.search h1 {
+	padding-bottom:40px;
+	color:white;
+}
+
+.input-huge { 
+	width: 100%;
+	height:60px !important;
+	border-radius:5px !important;
+	font-size:30px !important;
+	box-shadow:none !important;
+	border: none !important;
+}
+
+.input-huge:hover {
+	box-shadow:none !important;
+}
+
+.input-huge:focus {
+	box-shadow:none !important;
+}
+
+.input-describe { 
+	padding:15px 20px 10px 20px;
+	width: 100%;
+	height:200px !important;
+	border-radius:5px !important;
+	font-size:16px !important;
+	box-shadow:none !important;
+	border: none !important;
+	line-height:30px !important;
+}
+
+.input-describe:hover {
+	box-shadow:none !important;
+}
+
+.input-describe:focus {
+	box-shadow:none !important;
+}
+
+.footer {
+	width:100%;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.number_inp:focus {
+
+}
+
+.bio1 {
+	background-color:#ccc;
+}
+
+.bio {
+	/*background-color:#EFEFEF;*/
+	padding: 50px 0px 50px 0px;
+}
+
+.bio .text-center:hover {
+	/*background-color:#EFEFEF;*/
+	color:#EFEFEF;
+}
+
+.bio p {
+	line-height:30px;
+}
+
+.bio img {
+	border-color:white;
+	border-radius:10px;
+}
+
+.describe {
+	background-image:#EFEFEF;
+	color:#e74040;
+	padding: 50px 0px 50px 0px;
+}
+
+.prize {
+	background-color: #C0392B;
+	color:white;
+	padding: 50px 0px 50px 0px;
+}
+
+.prize img {
+	margin-bottom: 20px;
+	margin-right:10px;
+	border-radius:10px;
+	display:block;
+}
+
+.prize img:hover {
+
+}
+
+.finish {
+	/*background-color:#C0392B;*/
+	color:#e74040;
+	padding: 50px 0px 50px 0px;
+}
+
+.finish p {
+	line-height:30px;
+}
+
+.finish-other {
+	background-color:#EFEFEF;
+	color:#e74040;
+	padding: 50px 0px 50px 0px;
+}
+
+.finish-other-middle {
+	color:#e74040;
+	padding: 50px 0px 50px 0px;
+	position:relative;
+	/*height:1000px;*/
+	/* Newly added for slider*/
+	/*background-color:rgba(48,104,255,0.5);*/
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+	background-color:#e74040;
+	/*background: url('../img/bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+}
+
+.headerOnImg {
+	color:rgba(255,255,255,1);
+}
+
+h1.headerOnImg {
+	line-height: 100%;
+}
+
+.finish-other-desc {
+	color:#e74040;
+	padding: 50px 0px 50px 0px;
+	height:215px;
+	position:relative;
+	/*height:215px;*/
+	/* Newly added for slider*/
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+	background-color:#e74040;
+	/*background-color:rgba(48,104,255,0.5);*/
+	/*background: url('../img/bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+}
+
+.finish-other-final {
+	color:#e74040;
+	padding: 50px 0px 50px 0px;
+	position:relative;
+	/*height:65px;*/
+	/* Newly added for slider*/
+	/*background-color:rgba(48,104,255,0.5);*/
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+	background-color:#e74040;
+	/*background: url('../img/bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+}
+
+/*.finish-bg-img-layer {
+	background-color: rgba(230, 136, 34, 0.5);
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+.finish-other p {
+	line-height:30px;
+}
+
+.go {
+	/*background-color:#7F8C8D;*/
+	background-color:rgba(255,255,255,0.8);
+	border:2px #fff solid;
+	color:#e74040;
+	display: block; 
+	width: 100%;
+	padding: 30px 15px 30px 15px;
+	border-radius: 5px;
+	font-size:20px;
+}
+
+.go:hover {
+	text-decoration:none;
+	color:#e74040;
+	background-color:rgba(255,255,255,0.6);
+	border:2px #fff solid;
+	/*background-color:#95A5A6;*/
+}
+
+.special {
+	padding:15px 20px 15px 20px;
+	background-color:transparent;
+	border:2px #c3c3c3 solid;
+	border-radius:5px;
+	color:white;
+	margin-right:15px
+}
+
+.special:hover{
+	border:2px #fff solid;
+	background-color:transparent
+}
+
+.go-mobile {
+	background-color:#e74040;
+	color:white;
+	display: block; 
+	width: 70%;
+	padding: 30px 15px 30px 15px;
+	border-radius: 5px;
+	font-size:20px;
+}
+
+.go-mobile:hover {
+	text-decoration:none;
+	color:white;
+	background-color:#b62323;
+}
+
+.result  {
+	background-color:brown;
+	margin-top: 10px;
+	background-color:white;
+	width: 100%;
+	padding:15px 0px 15px 20px;
+	border-radius: 5px;
+}
+
+.carousel-control:hover{
+	background: #484848;
+	cursor:pointer;
+}
+
+.dot-piece:hover {
+	cursor:pointer;
+}
+
+.result:hover {
+	background-color:#eee;
+}
+
+.footer p {
+	padding: 20px 0px 20px 0px;
+}
+
+button {
+	border:none !important;
+	background:none;
+}
+
+.btn {
+	border:none !important;
+	background:none;
+	box-shadow: none !important;
+	padding-bottom: 15px;
+}
+
+.btn:hover {
+	border:none !important;
+	background:none;
+}
+
+.btn.active {
+	opacity: 0.4 !important;
+	background: none;
+	
+	border: 3px solid white;
+}
+
+.btn.active:hover {
+	opacity: 0.4 !important;
+}
+
+.awe-btn {
+	line-height: 70px;
+	margin-right:10px;
+	border: 2px #e74040 solid;
+	background-color: transparent;
+	color: #e74040;
+	font-weight: 200;
+	font-size:20px;
+	border-radius: 5px;
+	padding: 15px 25px 15px 25px;
+}
+
+.awe-btn:hover {
+	/*color: #e74040;*/
+	background-color: rgb(234, 64, 64);
+	color:white;
+	/*box-shadow: 20px;
+	-moz-box-shadow:    0px 4px 0px 0px #e74040;
+	  -webkit-box-shadow: 0px 4px 0px 0px #e74040;
+	  box-shadow:         0px 4px 0px 0px #e74040;*/
+}
+
+.landing {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    /*background-color:rgba(48,104,255,0.5);*/
+    /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+    background-color:#e74040;
+    /*background: url('../img/bg.png') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+}
+
+#featured {
+	margin-top:25%;
+	background-color:white;
+	padding: 15px 0px 15px 0px;
+	margin-left:-10.33%;
+	margin-right:-10.33%;
+	opacity:0.9;
+}
+
+#featured h1{
+	font-weight:100;
+}
+
+.login {
+	text-align:center;
+}
+
+.img_tile {
+	display: table-cell;
+	text-align:center ;
+    vertical-align:middle ;
+	float:left;
+	padding-left:20px;
+	padding-bottom: 20px;
+}
+
+	.carousel {
+		margin-bottom: 0;
+		padding: 0 40px 30px 40px;
+	}
+
+	.carousel p, a {
+		margin: 0;
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 14px;
+	  line-height: 20px;
+	  color: #fff;
+	}
+
+	.carousel h1, h2, h3, h4 {
+		margin: 0;
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 18px;
+	  line-height: 28px;
+	  color: #fff;
+	}
+
+	/* Reposition the controls slightly */
+	.carousel-control {
+		left: -12px;
+	}
+	.carousel-control.right {
+		right: -12px;
+	}
+	/* Changes the position of the indicators */
+	.carousel-indicators {
+		right: 50%;
+		top: auto;
+		bottom: 0px;
+		margin-right: -19px;
+	}
+	/* Changes the colour of the indicators */
+	.carousel-indicators li {
+		background: #c0c0c0;
+	}
+	.carousel-indicators .active {
+		background: #333333;
+	}
+
+	#hover-cap-4col .thumbnail {
+	    position:relative;
+	    overflow:hidden;    
+	}
+	.caption {
+	    display: none;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    background: rgba(104,104,104,0.8);
+	    width: 100%;
+	    height: 100%;
+	    color:#fff !important;
+	    overflow:auto;
+	}
+
+	.caption p,h4 {
+		padding: 0px 10px 0px 10px;
+	}
+
+	.button {
+		border-radius:5px;
+		color: #fff;
+		border: #fff;
+		border-style: solid;
+		border-width: 1px;
+		padding: 10px 18px;
+		margin-right:25px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.button:hover {
+		text-decoration:none;
+		color:gray;
+		background:#fff;
+	}
+	.round {
+		border-radius:75px;
+	}
+
+	/** {margin: 0; padding: 0;}*/
+.magnify {width: 200px; margin: 50px auto; position: relative;}
+
+/*Lets create the magnifying glass*/
+.large_img {
+	width: 175px; height: 175px;
+	position: absolute;
+	border-radius: 100%;
+	
+	/*Multiple box shadows to achieve the glass effect*/
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	
+	/*Lets load up the large image first*/
+	background: url('http://attosoft.com/anchor.png') no-repeat;
+	
+	/*hide the glass by default*/
+	display: none;
+}
+
+.finish-other-middle p {
+	color:white;
+	line-height:30px;
+}
+
+/*To solve overlap bug at the edges during magnification*/
+.small_img { display: block; }

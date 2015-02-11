@@ -1,0 +1,8 @@
+{
+  "name": "ytapi",
+  "dependencies": {
+    "express": "*",
+    "request": "*",
+    "xml2js": "*"
+  }
+}

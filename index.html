@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YTFind - YouTube subtitles made easy</title>
+    <meta name="keywords" CONTENT="zuhayeer, musa, YTFind, Mhacks, Winter, 2014, Michael, Mattheakis, Rohan, Pai, YouTube, extension, API, subtitles"> <meta name="description" CONTENT="YTFind makes it super easy to get the subtitles for a video you want to embed in your website">
+    <link rel="shortcut icon" href="img/logo_square.png" type="image/png">
+    <link rel="shortcut icon" type="image/png" href="img/logo_square.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="icon" type="image/png" href="img/zuhayeer.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900italic,900,700italic,700,500,500italic,400italic,300italic,300,100italic' rel='stylesheet' type='text/css'>
+    <link href="css/animate.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <a href="http://zmusa.me/w" class="top_fix" target="_blank" style="z-index:199;position: fixed; font-size: 8px; top: 0; right: 0; border: 0; height:30px; width:50px; background-color: rgba(0, 0, 0, 0.1); margin-right:10px; margin-top:10px; color:rgba(255, 255, 255, 0.7); line-height:10px;" alt="Get the Chrome extension"><center><span class="hide">Get</span> <br> Extension</center></a>
+      <div class="bio">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <div class="row-fluid" style="height:50px;">
+              <div class="hidden-phone">
+                <center>
+              
+                  <img class="animated fadeInDown" src="img/logo.png" width="150"/>
+                  <br>
+                  <!-- <p class="header_logo animated fadeInDown" style="padding-top:4px;cursor:pointer;font-weight:200;">YTFind</p> -->
+                </center>
+              </div>
+              <div class="visible-phone">
+                <center>
+                  <img class="animated fadeInDown" src="img/logo.png" width="150"/>
+                </center>
+                <!-- <center><p class="header_logo animated fadeInDown" style="padding-top:4px;cursor:pointer;font-weight:200;font-size:30px;">YTFind</p></center> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="finish animated fadeInUp">
+      <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="text-center">Y T F I N D</h1>
+            <center><p>YTFind makes it super easy to get the YouTube transcript for videos you embed on your website. Just use our simple API to get the JSON and/or XML. We handle the hard part getting it from YouTube.</p></center><br><br>
+          </div>
+        </div>
+    </div>
+
+<!--     <div class="finish visible-phone">
+      <div class="row-fluid">
+          <div class="span10 offset1">
+            <center><a href="http://represent.io/zm" target="_blank" data-toggle="popover" title="" data-content="I'm Zuhayeer Musa, a web and mobile developer that regularly attends hackathons in the Bay Area and goes to Monta Vista High School. Tweet me at @zuhayeer." id="pop_contain" style="color:#505050;"><img class="round" id="hover_blur" src="http://attosoft.com/zuhayeer.jpg" width="150"></a></center>
+            <br />
+            <h1></h1>
+            <p><br><br><br></p>
+            <p><br><br><br></p>
+            <p><br><br><br></p>
+            <p><br><br><br></p>
+            <p><br><br></p>
+          </div>
+        </div>
+    </div> -->
+
+
+    <div class="finish-other-middle animated fadeInDown">
+      <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="text-center headerOnImg">quick walkthrough sample</h1><br>
+            <center><p>Sample request and response outlined below. Pass in two paramters, either xml or json output and the second being the YouTube video id. That's it. Enjoy.</p></center><br><br>
+            <div class="visible-phone visible-tablet">
+              <img src="img/usage.png" style="width:100%;"/><br><br>
+            </div>
+            <div class="hidden-phone hidden-tablet">
+              <pre style="color:#e74040">
+
+                GET http://ytfind.com/json/UF8uR6Z6KLc
+              </pre><br>
+              <pre style="color:#e74040;">
+                {
+                  "transcript": {
+                    "text": [
+                      {
+                        "line": "this program is brought to you by stanford university please visit us at",
+                        "timing": {
+                          "start": "7.7",
+                          "dur": "4.42"
+                        }
+                      },
+                      {
+                        "line": "stanford dot b_t_u_",
+                        "timing": {
+                          "start": "12.12",
+                          "dur": "7"
+                        }
+                      },
+                      {
+                        "line": "on mon",
+                        "timing": {
+                          "start": "27.149",
+                          "dur": "1.05"
+                        }
+                      },
+                      {
+                        "line": "honored to be with you today if your commencement from one of finest",
+                        "timing": {
+                          "start": "28.199",
+                          "dur": "3.271"
+                        }
+                      }
+                    ]
+                  }
+                }
+              </pre>
+              <br><br>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- <canvas id = 'canvas'> -->
+      <div class="finish animated fadeInDown">
+      <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="text-center">chrome extension built on top of the API</h1><br>
+            <div style="margin-top:30px;margin-bottom:15px;">
+              <center>
+                <div class="hidden-phone">
+                  <iframe height="360" width="640" src="//www.youtube.com/embed/_DPUFtN25cs" frameborder="0" allowfullscreen style="margin-bottom:40px;"></iframe><br>
+                  <a href="http://zmusa.me/w" class="awe-btn">Download extension</a>
+                  <a href="/json/UF8uR6Z6KLc" class="awe-btn">Take a look at the API output</a>
+                </div>
+                <div class="visible-phone">
+                  <iframe height="140" width="240" src="//www.youtube.com/embed/_DPUFtN25cs" frameborder="0" allowfullscreen style="margin-bottom:40px;"></iframe><br>
+                  <a href="http://zmusa.me/w" class="awe-btn">Download extension</a><br>
+                  <a href="/json/UF8uR6Z6KLc" class="awe-btn">Take a look at the API output</a>
+                </div>
+              </center>
+            </div>
+            <br />
+          </div>
+        </div>
+    </div>
+
+    <!-- </canvas> -->
+
+    <div class="finish-other-final animated fadeInDown">
+      <div class="row-fluid">
+          <div class="span10 offset1">
+            <center>
+              <div class="blog"> 
+                <div class="row">
+                  <div class="container">
+                    <div class="span10 offset1">
+                      <div id="all" style="display:inline"><span class="tumblr-api-loading"><div class="hidden-phone">
+                          <center><h1 class="text-center headerOnImg"><a target="_blank" href="http://twitter.com/zuhayeer" style="color:#fff;border-bottom: 1px dotted #fff; font-size:25pt; font-weight:200;">@zuhayeer</a>, <a target="_blank" href="http://twitter.com/michaelm244" style="color:#fff;border-bottom: 1px dotted #fff; font-size:25pt; font-weight:200;">@michaelm244</a>, <a target="_blank" href="http://twitter.com/rohanpai25" style="color:#fff;border-bottom: 1px dotted #fff; font-size:25pt; font-weight:200;">@rohanpai25</a></h1></center>
+                        </div>
+                        <div class="visible-phone">
+                          <center><h1 class="text-center headerOnImg" style="font-size:14pt;line-height:45px;"><a target="_blank" href="http://twitter.com/zuhayeer" style="color:#fff;border-bottom: 1px dotted #fff; font-size:25pt; font-weight:200;">@zuhayeer</a>, <a target="_blank" href="http://twitter.com/michaelm244" style="color:#fff;border-bottom: 1px dotted #fff; font-size:25pt; font-weight:200;">@michaelm244</a>, <a target="_blank" href="http://twitter.com/rohanpai25" style="color:#fff;border-bottom: 1px dotted #fff; font-size:25pt; font-weight:200;">@rohanpai25</a></h1></center>
+                        </div></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <div class="row-fluid">
+        <div class="span10 offset1">
+          <center><p style="line-height:30px;">Copyright &copy; 2014 YTFind</p></center>
+        </div>
+      </div>
+    </div>
+
+</div> <!-- End of #after-login -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
