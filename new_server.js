@@ -116,7 +116,8 @@ app.get('/:form/:v', function(req, res) {
 
 var httpApp = express();
 httpApp.get('*',function(req,res){
-    res.redirect('https://ytfind.com'+req.url)
+	console.log("got an http request");
+  res.redirect('https://ytfind.com'+req.url)
 });
 var httpServer = http.createServer(httpApp);
 httpServer.listen(3000);
