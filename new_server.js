@@ -113,5 +113,4 @@ app.get('/:form/:v', function(req, res) {
 	}
 });
 
-http.createServer(app).listen(3000);
 https.createServer(options, app).listen(443);
