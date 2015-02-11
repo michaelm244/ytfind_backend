@@ -1,10 +1,20 @@
 var express = require('express');
 var app = express();
+var https = require('https');
+var fs = require('fs');
 var request = require('request');
 var exec = require('child_process').exec;
 var xml2js = require('xml2js');
 var parseString = xml2js.parseString;
 var http = require('http');
+
+var options = {
+	key: fs.readFileSync('../ssl_stuff/ytfind.key'),
+	cert: fs.readFileSync('../ssl_stuff/server.crt'),
+	ca: fs.readFileSync('../ssl_stuff/ca.crt'),
+	requestCert: true,
+	reqjectUnauthorized: false
+}
 
 app.set('views',__dirname);
 app.set('view engine', 'html');
@@ -103,4 +113,5 @@ app.get('/:form/:v', function(req, res) {
 	}
 });
 
-app.listen(3000);
+http.createServer(app).listen(3000);
+https.createServer(options, app).listen(443);
