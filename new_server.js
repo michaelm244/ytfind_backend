@@ -10,7 +10,7 @@ var http = require('http');
 
 var options = {
 	key: fs.readFileSync('../ssl_stuff/ytfind.key'),
-	cert: fs.readFileSync('../ssl_stuff/server.crt'),
+	cert: fs.readFileSync('../ssl_stuff/ytfind_com.crt'),
 	ca: fs.readFileSync('../ssl_stuff/ca.crt'),
 	requestCert: true,
 	reqjectUnauthorized: false
