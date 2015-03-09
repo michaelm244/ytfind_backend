@@ -120,7 +120,7 @@ app.get('/:form/:v', function(req, res) {
 	}
 });
 
-var httpApp = express.createServer();
+var httpApp = express().createServer();
 httpApp.get('*',function(req,res){
 	console.log("got an http request");
   res.redirect('https://ytfind.com'+req.url)
