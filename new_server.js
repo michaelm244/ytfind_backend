@@ -19,7 +19,6 @@ var options = {
 
 app.set('views',__dirname);
 app.set('view engine', 'html');
-console.log(app.get('views'));
 app.use(express.static(__dirname));
 
 app.get('/', function(req, res) {
@@ -120,6 +119,6 @@ httpApp.get('*',function(req,res){
   res.redirect('https://ytfind.com'+req.url)
 });
 var httpServer = http.createServer(httpApp);
-httpServer.listen(3000);
+httpServer.listen(80);
 
 https.createServer(options, app).listen(443);
