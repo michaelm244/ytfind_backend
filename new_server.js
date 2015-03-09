@@ -21,6 +21,13 @@ app.set('views',__dirname);
 app.set('view engine', 'html');
 app.use(express.static(__dirname));
 
+app.use(function(req, res, next) {
+  if(!req.secure) {
+    return res.redirect(['https://', req.get('Host'), req.url].join(''));
+  }
+  next();
+});
+
 app.get('/', function(req, res) {
 	res.render('index.html');
 });
@@ -113,6 +120,7 @@ app.get('/:form/:v', function(req, res) {
 	}
 });
 
+/*
 var httpApp = express();
 httpApp.get('*',function(req,res){
 	console.log("got an http request");
@@ -120,5 +128,6 @@ httpApp.get('*',function(req,res){
 });
 var httpServer = http.createServer(httpApp);
 httpServer.listen(80);
+*/
 
 https.createServer(options, app).listen(443);
