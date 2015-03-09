@@ -120,11 +120,15 @@ app.get('/:form/:v', function(req, res) {
 	}
 });
 
-var httpApp = express().createServer();
-httpApp.get('*',function(req,res){
-	console.log("got an http request");
-  res.redirect('https://ytfind.com'+req.url)
+var redirectApp = express();
+var redirectServer = http.createServer(redirectApp);
+
+redirectApp.use(function requireHTTPS(req, res, next) {
+  if (!req.secure) {
+    return res.redirect('https://' + req.headers.host + req.url);
+  }
+  next();
 });
-httpApp.listen(80);
+redirectServer.listen(80);
 
 https.createServer(options, app).listen(443);
